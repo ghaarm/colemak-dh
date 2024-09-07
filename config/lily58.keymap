@@ -15,11 +15,13 @@
     macros {
         macro_alt_a_ae: macro_alt_a_ae {
             compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
             #binding-cells = <0>;
             bindings =
-                <&none>,
-                <&macro_press>,
-                <&kp LEFT_ALT &kp A &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>;
+                <&macro_press &kp LALT &kp A>,
+                <&macro_tap  &kp A &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>,
+                <&macro_release &kp LALT &kp A>;
 
             label = "MACRO_ALT_A_AE";
         };
