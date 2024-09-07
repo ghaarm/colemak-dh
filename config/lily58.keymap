@@ -8,7 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+// #include <dt-bindings/zmk/ext_power.h>
 
 
 / {
@@ -17,10 +17,10 @@
 
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  TAB  |  Q  |  W  |  F   |  R   |  B   |                   |  J   |  U    |  U    |  Y   |   ;   |   +   |
-            // |  CTRL |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   #   |
-            // | SHIFT |  Z  |  X  |  C   |  D   |  V   | "hyper"|  | "meh" |  K   |  H    |  ,    |  .   |   -   | SHIFT |
+            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   +    |
+            // |  TAB  |  Q  |  W  |  F   |  R   |  B   |                   |  J   |  U    |  U    |  Y   |      |   #   |
+            // | SHIFT |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   | SHIFT |
+            // | CTRL  |  Z  |  X  |  C   |  D   |  V   | "hyper"|  | "meh" |  K   |  H    |  ,    |  .   |   -   |  |
             //                     | ALT  | REP  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
             bindings = <
