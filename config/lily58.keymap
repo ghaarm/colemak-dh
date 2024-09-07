@@ -20,7 +20,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp LALT>,
-                <&macro_tap  &kp A &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>,
+                <&macro_tap   &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>,
                 <&macro_release &kp LALT>;
 
             label = "MACRO_ALT_A_AE";
