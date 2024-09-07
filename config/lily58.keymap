@@ -31,7 +31,7 @@
         alt_a_to_ae: alt_a_to_ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LA(A) &kp N0 &kp X &kp N0 &kp N0 &kp LS(E) &kp N4>;
+            bindings = <&kp LA(A) &kp N0 &kp X &kp N0 &kp N0 &kp LS(E) &kp N4>;
             label = "ALT_A_TO_AE";
         };
     };
