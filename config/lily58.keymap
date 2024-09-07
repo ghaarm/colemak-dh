@@ -12,20 +12,20 @@
 // #include <dt-bindings/zmk/ext_power.h>
 
 / {
-    macros {
-        macro_alt_a_ae: macro_alt_a_ae {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap   &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>,
-                <&macro_release &kp LALT>;
-
-            label = "MACRO_ALT_A_AE";
-        };
-    };
+    // macros {
+    //     macro_alt_a_ae: macro_alt_a_ae {
+    //         compatible = "zmk,behavior-macro";
+    //         wait-ms = <40>;
+    //         tap-ms = <40>;
+    //         #binding-cells = <0>;
+    //         bindings =
+    //             <&macro_press &kp LALT>,
+    //             <&macro_tap   &kp N0 &kp X &kp N0 &kp N0 &kp LS(C) &kp N4>,
+    //             <&macro_release &kp LALT>;
+    //
+    //         label = "MACRO_ALT_A_AE";
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -46,9 +46,9 @@
                             &kp LALT  &kp C_REPEAT  &mo 1   &kp ENTER               &kp SPACE              &kp BSPC  &mo 2   &kp RGUI
             >;
 
-            bindings = <
-            &macro_alt_a_ae     // Zuweisung des Makros an Alt + A
-        >;
+        //     bindings = <
+        //     &macro_alt_a_ae     // Zuweisung des Makros an Alt + A
+        // >;
         };
 
         lower_layer {
