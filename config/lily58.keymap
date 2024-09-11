@@ -56,11 +56,11 @@
             //                     | ALT  | REP  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE      &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                 &kp N6    &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
-&kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                                                  &kp J     &kp L   &kp U      &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
-&kp LEFT_SHIFT  &kp A   &kp R   &kp S     &kp T     &kp G                                                  &kp M     &kp N   &kp E      &kp I    &kp O              &kp RIGHT_SHIFT
-&kp LCTRL       &kp Y   &kp X   &kp C     &kp D     &kp V   &kp LS(LA(LC(LGUI)))    &kp RC(RG(RIGHT_ALT))  &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                &kp LGUI  &kp LALT  &mo 1   &kp ENTER               &kp SPACE              &kp BSPC  &mo 2   &kp RGUI
+&kp ESCAPE        &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                 &kp N6    &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
+&kp TAB           &kp Q   &kp W   &kp F     &kp P     &kp B                                                  &kp J     &kp L   &kp U      &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
+&kp LEFT_CONTROL  &kp A   &kp R   &kp S     &kp T     &kp G                                                  &kp M     &kp N   &kp E      &kp I    &kp O              &kp GRAVE
+&kp LEFT_SHIFT    &kp Y   &kp X   &kp C     &kp D     &kp V   &kp LS(LA(LC(LGUI)))    &kp RC(RG(RIGHT_ALT))  &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp RIGHT_SHIFT
+                                  &kp LGUI  &kp LALT  &mo 1   &kp ENTER               &kp SPACE              &kp BSPC  &mo 2   &kp RGUI
             >;
 
             //     bindings = <
@@ -78,7 +78,7 @@
 
             bindings = <
 &trans    &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp LS(KP_NUMBER_3)  &kp DOLLAR        &kp PERCENT                        &kp AMPERSAND  &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp QUESTION
-&kp PLUS  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(N3)           &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)     &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)       &kp QUESTION
+&kp PLUS  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(N3)           &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)     &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)       &kp EQUAL
 &trans    &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3      &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &none          &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &kp PIPE
 &trans    &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8      &kp KP_NUMBER_9   &kp KP_NUMBER_0  &none     &none   &kp TILDE      &kp SEMICOLON   &kp UNDERSCORE        &kp LBRC               &kp RBRC         &kp PIPE
                                                &trans               &trans            &trans           &trans    &trans  &trans         &trans          &trans
