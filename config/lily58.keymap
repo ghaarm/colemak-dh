@@ -80,7 +80,7 @@
 &kp GRAVE  &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp LS(KP_NUMBER_3)  &kp DOLLAR        &kp PERCENT                        &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
 &trans     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(N3)           &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp EQUAL
 &trans     &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3      &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp PIPE
-&trans     &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8      &kp KP_NUMBER_9   &kp KP_NUMBER_0  &none     &none   &kp TILDE       &kp SEMICOLON   &kp UNDERSCORE        &kp LBRC               &kp RBRC    &kp PIPE
+&trans     &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8      &kp KP_NUMBER_9   &kp KP_NUMBER_0  &trans    &trans  &kp TILDE       &kp SEMICOLON   &kp UNDERSCORE        &kp LBRC               &kp RBRC    &kp PIPE
                                                 &trans               &trans            &trans           &trans    &trans  &trans          &trans          &trans
             >;
         };
