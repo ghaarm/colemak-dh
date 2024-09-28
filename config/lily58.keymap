@@ -20,15 +20,16 @@
   };
 
 #define DEFAULT 0
-#define LOW 1
-#define UPP 2
+#define LOWER 1
+#define UPPER 2
 
 
 / {
     combos {
                 compatible = "zmk,combos";
+
                 COMBO(ae, &kp SQT, 25 51)
-            },
+            };
 
     keymap {
         compatible = "zmk,keymap";
@@ -71,7 +72,7 @@
             >;
         };
 
-        raise_layer {
+        upper_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
