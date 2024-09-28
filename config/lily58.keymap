@@ -13,7 +13,7 @@
 // https://joshinator.de/posts/zmk-combo-helper/
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <500>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <0>; \
@@ -29,6 +29,9 @@
                 compatible = "zmk,combos";
 
                 COMBO(ae, &kp SQT, 25 51)
+                COMBO(oe, &kp SEMICOLON, 34 51)
+                COMBO(ue, &kp LEFT_BRACKET, 20 51)
+                COMBO(ss, &kp MINUS, 27 51)
             };
 
     keymap {
