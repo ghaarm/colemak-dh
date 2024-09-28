@@ -33,8 +33,8 @@
         COMBO(oe, &kp SEMICOLON, 34 51)
         COMBO(ue, &kp LEFT_BRACKET, 20 51)
         COMBO(ss, &kp MINUS, 27 51)
-        COMBO(ae-ss, &kp SQT &kp MINUS, 25 27 51)
-        COMBO(ue-ss, &kp LEFT_BRACKET &kp MINUS, 20 27 51)
+        // COMBO(ae-ss, &kp SQT &kp MINUS, 25 27 51) // combo wrong technique maybe custom behaviour
+        // COMBO(ue-ss, &kp LEFT_BRACKET &kp MINUS, 20 27 51)
     };
 
     keymap {
