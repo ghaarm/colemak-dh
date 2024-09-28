@@ -8,9 +8,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-// #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 
+// #include <dt-bindings/zmk/ext_power.h>
 // https://joshinator.de/posts/zmk-combo-helper/
+
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <500>; \
@@ -23,16 +25,15 @@
 #define LOWER 1
 #define UPPER 2
 
-
 / {
     combos {
-                compatible = "zmk,combos";
+        compatible = "zmk,combos";
 
-                COMBO(ae, &kp SQT, 25 51)
+        COMBO(ae, &kp SQT, 25 51)
                 COMBO(oe, &kp SEMICOLON, 34 51)
                 COMBO(ue, &kp LEFT_BRACKET, 20 51)
                 COMBO(ss, &kp MINUS, 27 51)
-            };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -67,11 +68,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE  &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp LS(KP_NUMBER_3)  &kp DOLLAR        &kp PERCENT                        &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
-&trans     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(N3)           &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp EQUAL
-&trans     &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3      &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp PIPE
-&trans     &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8      &kp KP_NUMBER_9   &kp KP_NUMBER_0  &trans    &trans  &kp TILDE       &kp SEMICOLON   &kp UNDERSCORE        &kp LBRC               &kp RBRC    &kp PIPE
-                                                &trans               &trans            &trans           &trans    &trans  &trans          &trans          &trans
+&kp PLUS  &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp LS(KP_NUMBER_3)  &kp DOLLAR        &kp PERCENT                        &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
+&trans    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(N3)           &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp EQUAL
+&trans    &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3      &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp PIPE
+&trans    &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8      &kp KP_NUMBER_9   &kp KP_NUMBER_0  &trans    &trans  &kp TILDE       &kp SEMICOLON   &kp UNDERSCORE        &kp LBRC               &kp RBRC    &kp PIPE
+                                               &trans               &trans            &trans           &trans    &trans  &trans          &trans          &trans
             >;
         };
 
