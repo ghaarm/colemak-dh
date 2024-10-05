@@ -78,7 +78,7 @@
             #binding-cells = <0>;
             bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
 
-            mods = <(MOD_LSFT)>, <(MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         // morph_ABC: morph_ABC {
