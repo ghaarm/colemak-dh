@@ -30,11 +30,11 @@
       alt_backspace: alt_backspace {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&macro_tap &kp LALT &kp BSPC>;
-        // = <&macro_press &kp BSPC>
-        // , <&macro_tap &kp LALT &kp BSPC>
-        // , <&macro_release &kp BSPC>
-        // ;
+        // bindings = <&macro_tap &kp LALT &kp BSPC>;
+        = <&macro_press &kp BSPC>
+        , <&macro_tap &kp LALT &kp BSPC>
+        , <&macro_release &kp BSPC>
+        ;
       };
     };
 
