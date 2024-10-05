@@ -26,6 +26,19 @@
 #define UPPER 2
 
 / {
+    macros {
+      alt_backspace: alt_backspace {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp LALT &kp BSPC>;
+        // = <&macro_press &kp BSPC>
+        // , <&macro_tap &kp LALT &kp BSPC>
+        // , <&macro_release &kp BSPC>
+        ;
+      };
+    };
+
+
     behaviors {
         morph_ae: morph_ae {
             compatible = "zmk,behavior-mod-morph";
@@ -57,6 +70,15 @@
             bindings = <&kp S>, <&kp MINUS>;
 
             mods = <(MOD_LALT)>;
+        };
+
+
+        morph_bspc: morph_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
+
+            mods = <(MOD_LSFT)>, <(MOD_RSFT)>;
         };
 
         // morph_ABC: morph_ABC {
@@ -94,7 +116,7 @@
 &kp TAB           &kp Q      &kp W   &kp F      &kp P     &kp B                                                  &kp J     &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &kp LEFT_SHIFT    &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                                  &kp M     &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL  &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LS(LA(LC(LGUI)))    &kp RC(RG(RIGHT_ALT))  &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                     &kp LGUI   &kp LALT  &mo 1   &kp ENTER               &kp SPACE              &kp BSPC  &mo 2   &kp RGUI
+                                     &kp LGUI   &kp LALT  &mo 1   &kp ENTER               &kp SPACE              &morph_bspc  &mo 2   &kp RGUI
             >;
         };
 
