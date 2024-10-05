@@ -81,19 +81,19 @@
         //     mods = <(MOD_LSFT|MOD_RSFT)>;
         // };
 
-        morph_bspc: morph_bspc {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&alt_backspace>, <&kp BSPC>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        // morph_ABC: morph_ABC {
+        // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
-        //     bindings = <&kp A>, <&morph_BC>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        //     bindings = <&alt_backspace>, <&kp BSPC>;
+        //
+        //     mods = <(MOD_LSFT)>;
         // };
+        morph_ABC: morph_ABC {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&morph_BC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
