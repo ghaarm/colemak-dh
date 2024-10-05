@@ -34,7 +34,7 @@
         // = <&macro_press &kp BSPC>
         // , <&macro_tap &kp LALT &kp BSPC>
         // , <&macro_release &kp BSPC>
-        ;
+        // ;
       };
     };
 
