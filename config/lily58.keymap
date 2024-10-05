@@ -73,13 +73,13 @@
         };
 
 
-        // morph_bspc: morph_bspc {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
-        //
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
+        morph_bspc: morph_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
@@ -88,12 +88,12 @@
         //
         //     mods = <(MOD_LSFT)>;
         // };
-        morph_ABC: morph_ABC {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&morph_BC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        // morph_ABC: morph_ABC {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp A>, <&morph_BC>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
     };
 
     combos {
