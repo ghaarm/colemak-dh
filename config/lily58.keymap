@@ -72,14 +72,21 @@
             mods = <(MOD_LALT)>;
         };
 
-
         morph_bspc: morph_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
+            bindings = <&kp BSPC>, <&kp DEL>;
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
+
+        // morph_bspc: morph_bspc {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
+        //
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
 
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
