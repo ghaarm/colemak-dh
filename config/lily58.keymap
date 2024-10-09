@@ -26,17 +26,17 @@
 #define UPPER 2
 
 / {
-    macros {
-      alt_backspace: alt_backspace {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        // bindings = <&macro_tap &kp LALT &kp BSPC>;
-        bindings = <&macro_press &kp LALT>
-        , <&macro_tap &kp BSPC>
-        , <&macro_release &kp LALT>
-        ;
-      };
-    };
+    // macros {
+    //   alt_backspace: alt_backspace {
+    //     compatible = "zmk,behavior-macro";
+    //     #binding-cells = <0>;
+    //     // bindings = <&macro_tap &kp LALT &kp BSPC>;
+    //     bindings = <&macro_press &kp LALT>
+    //     , <&macro_tap &kp BSPC>
+    //     , <&macro_release &kp LALT>
+    //     ;
+    //   };
+    // };
 
 
     behaviors {
