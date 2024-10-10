@@ -25,6 +25,13 @@
 #define LOWER 1
 #define UPPER 2
 
+
+
+    &mt{
+      tapping-term-ms = <400>;
+    };
+
+
 / {
     // macros {
     //   alt_backspace: alt_backspace {
@@ -38,9 +45,6 @@
     //   };
     // };
 
-    &mt{
-      tapping-term-ms = <400>;
-    };
 
     behaviors {
         morph_ae: morph_ae {
