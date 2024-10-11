@@ -25,12 +25,7 @@
 #define LOWER 1
 #define UPPER 2
 
-
-
-    &mt{
-      tapping-term-ms = <400>;
-    };
-
+&mt { tapping-term-ms = <400>; };
 
 / {
     // macros {
@@ -44,7 +39,6 @@
     //     ;
     //   };
     // };
-
 
     behaviors {
         morph_ae: morph_ae {
@@ -94,7 +88,6 @@
         //
         //     mods = <(MOD_LSFT|MOD_RSFT)>;
         // };
-
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
@@ -133,11 +126,11 @@
             //                     | ALT  | REP  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE        &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                                 &kp N6    &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
-&kp TAB           &kp Q      &kp W   &kp F      &kp P     &kp B                                                  &kp J     &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
-&kp LEFT_SHIFT    &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                                  &kp M     &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LS(LA(LC(LGUI)))    &kp RC(RG(RIGHT_ALT))  &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                     &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER              &kp SPACE              &morph_bspc  &mo 2   &kp RGUI
+&kp ESCAPE        &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                                 &kp N6       &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
+&kp TAB           &kp Q      &kp W   &kp F      &kp P     &kp B                                                  &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
+&kp LEFT_SHIFT    &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                                  &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LS(LA(LC(LGUI)))    &kp RC(RG(RIGHT_ALT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
+                                     &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER          &kp SPACE              &morph_bspc  &mo 2   &kp RGUI
             >;
         };
 
@@ -151,8 +144,8 @@
 
             bindings = <
 &kp NON_US_BSLH  &kp EXCLAMATION   &kp AT_SIGN       &kp LS(NUMBER_3)  &kp DOLLAR        &kp PERCENT                        &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
-&kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp EQUAL
-&trans           &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3   &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp PIPE
+&kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(NUMBER_4)  &kp LS(N5)                         &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp QUESTION
+&trans           &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3   &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp EQUAL
 &trans           &kp KP_NUMBER_6   &kp KP_NUMBER_7   &kp KP_NUMBER_8   &kp KP_NUMBER_9   &kp KP_NUMBER_0  &trans    &trans  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LA(N8)            &kp LA(N9)             &none       &kp PIPE
                                                      &trans            &trans            &trans           &trans    &trans  &trans          &trans          &trans
             >;
