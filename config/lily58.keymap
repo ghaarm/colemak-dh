@@ -41,7 +41,7 @@
     // };
 
     macros {
-        my_modifier_macro: hyper {
+        hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
