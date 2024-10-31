@@ -45,13 +45,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LGUI>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT_CONTROL>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT_ALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT_SHIFT>,
                 // <&macro_release>,
                 // <&kp LEFT_SHIFT>,
