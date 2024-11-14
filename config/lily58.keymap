@@ -105,6 +105,24 @@
             mods = <(MOD_LSFT)>;
         };
 
+        morph_bspc: morph_f3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3>, <&kp F3>;
+
+            mods = <(MOD_LCTRL)>;
+        };
+
+
+        morph_bspc: morph_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_4>, <&kp DEL>;
+
+            mods = <(MOD_LCTRL)>;
+        };
+
+
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
