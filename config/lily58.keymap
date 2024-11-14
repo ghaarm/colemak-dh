@@ -105,7 +105,7 @@
             mods = <(MOD_LSFT)>;
         };
 
-        morph_bspc: morph_f3 {
+        morph_f3: morph_f3 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_3>, <&kp F3>;
@@ -114,7 +114,7 @@
         };
 
 
-        morph_bspc: morph_f4 {
+        morph_f4: morph_f4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_4>, <&kp DEL>;
@@ -122,7 +122,7 @@
             mods = <(MOD_LCTRL)>;
         };
 
-        morph_bspc: morph_f5 {
+        morph_f5: morph_f5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N5>, <&kp DEL>;
