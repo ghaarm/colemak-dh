@@ -114,7 +114,7 @@
         };
 
 
-        morph_bspc: morph_bspc {
+        morph_bspc: morph_f4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_4>, <&kp DEL>;
@@ -122,7 +122,13 @@
             mods = <(MOD_LCTRL)>;
         };
 
+        morph_bspc: morph_f5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp DEL>;
 
+            mods = <(MOD_LCTRL)>;
+        };
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
@@ -187,7 +193,7 @@
             bindings = <
 &kp NON_US_BSLH  &kp EXCLAMATION   &kp AT_SIGN       &kp LS(NUMBER_3)  &kp DOLLAR        &kp PERCENT                    &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
 &kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(NUMBER_4)  &kp LS(N5)                     &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp QUESTION
-&trans           &kp N1            &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5                         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp EQUAL
+&trans           &kp N1            &kp NUMBER_2      &morph_f3         &morh_f4          &morph_f5                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp EQUAL
 &trans           &kp NUMBER_6      &kp N7            &kp N8            &kp KP_NUMBER_9   &kp N0       &trans    &trans  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LA(N8)            &kp LA(N9)             &none       &kp PIPE
                                                      &trans            &trans            &trans       &trans    &trans  &trans          &trans          &trans
             >;
