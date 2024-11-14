@@ -117,7 +117,7 @@
         morph_f4: morph_f4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_4>, <&kp DEL>;
+            bindings = <&kp NUMBER_4>, <&kp F4>;
 
             mods = <(MOD_LCTL)>;
         };
@@ -125,7 +125,7 @@
         morph_f5: morph_f5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N5>, <&kp DEL>;
+            bindings = <&kp N5>, <&kp F5>;
 
             mods = <(MOD_LCTL)>;
         };
