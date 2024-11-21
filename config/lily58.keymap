@@ -135,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp RGUI>;
 
-            mods = <(MOD_RS)>;
+            mods = <(MOD_RSFT)>;
         };
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
