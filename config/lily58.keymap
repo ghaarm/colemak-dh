@@ -113,7 +113,6 @@
             mods = <(MOD_LCTL)>;
         };
 
-
         morph_f4: morph_f4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -129,6 +128,7 @@
 
             mods = <(MOD_LCTL)>;
         };
+
         // morph_bspc: morph_bspc {
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
@@ -178,7 +178,7 @@
 &kp TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                                    &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                                    &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LG(LC(LA(LSHIFT)))    &kp RC(RG(RIGHT_ALT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                          &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER            &mt RGUI SPACE              &morph_bspc  &mo 2   &kp RGUI
+                                          &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER            &mt RGUI SPACE         &morph_bspc  &mo 2   &kp RGUI
             >;
         };
 
@@ -192,8 +192,8 @@
 
             bindings = <
 &kp NON_US_BSLH  &kp EXCLAMATION   &kp AT_SIGN       &kp LS(NUMBER_3)  &kp DOLLAR        &kp PERCENT                    &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
-&kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(NUMBER_4)  &kp LS(N5)                     &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp LS(QUESTION)
-&trans           &kp N1            &kp NUMBER_2      &morph_f3         &morph_f4          &morph_f5                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp EQUAL
+&kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(NUMBER_4)  &kp LS(N5)                     &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp LS(MINUS)
+&trans           &kp N1            &kp NUMBER_2      &morph_f3         &morph_f4         &morph_f5                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &none       &kp EQUAL
 &trans           &kp NUMBER_6      &kp N7            &kp N8            &kp KP_NUMBER_9   &kp N0       &trans    &trans  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LA(N8)            &kp LA(N9)             &none       &kp PIPE
                                                      &trans            &trans            &trans       &trans    &trans  &trans          &trans          &trans
             >;
@@ -208,7 +208,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&hyper         &none         &none         &none         &none         &none                         &none       &none           &none              &none            &none       &none
+&hyper        &none         &none         &none         &none         &none                         &none       &none           &none              &none            &none       &none
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7      &kp F8          &kp F9             &kp F10          &none       &none
 &trans        &none         &none         &none         &none         &none                         &none       &none           &none              &none            &none       &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &none     &none   &bt BT_CLR  &kp C_PREVIOUS  &kt C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kt C_PLAY_PAUSE
