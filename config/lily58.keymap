@@ -62,18 +62,6 @@
                 <&macro_release>,
                 <&kp LGUI>;
         };
-
-        hyper2: hyper2 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LCTRL &kp LALT &kp LSHFT &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&kp LSHFT &kp LALT &kp LCTRL &kp LGUI>;
-        };
     };
 
     behaviors {
@@ -194,11 +182,11 @@
             //                     | ALT  | REP  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE             &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                              &kp N6       &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
-&kp TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                               &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
-&mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                               &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
-&kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LG(LC(LA(LEFT_SHIFT)))    &kp CAPS      &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                          &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER                &morph_space  &morph_bspc  &mo 2   &kp RGUI
+&kp ESCAPE             &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                            &kp N6       &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
+&kp TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                             &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
+&mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
+&kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp CAPS          &kp LC(LA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
+                                          &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER    &morph_space            &morph_bspc  &mo 2   &kp RGUI
             >;
         };
 
@@ -228,7 +216,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&hyper        &hyper2       &none         &none         &none         &none                         &none       &none           &none              &none            &none       &none
+&none         &none         &none         &none         &none         &none                         &none       &none           &none              &none            &none       &none
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7      &kp F8          &kp F9             &kp F10          &none       &none
 &trans        &none         &none         &none         &none         &none                         &none       &none           &none              &none            &none       &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &none     &none   &bt BT_CLR  &kp C_PREVIOUS  &kt C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kt C_PLAY_PAUSE
