@@ -139,7 +139,7 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(lgui_enter, &kp LG(RET), 24 53, 54)
+        COMBO(lgui_enter, &kp LG(RET), 24, 53, 54)
         // COMBO(ae, &kp SQT, 25 51)
         // COMBO(oe, &kp SEMICOLON, 34 51)
         // COMBO(ue, &kp LEFT_BRACKET, 20 51)
