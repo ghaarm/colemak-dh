@@ -15,7 +15,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <200>; \
+    timeout-ms = <500>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <0>; \
@@ -166,7 +166,7 @@
 &kp TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                             &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp CAPS          &kp LC(LA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                          &kp LGUI   &kp LALT  &mo 1   &mt LGUI ENTER    &morph_space            &morph_bspc  &mo 2   &kp RGUI
+                                          &kp LGUI   &kp LALT  &mt MO(1) DEL   &mt LGUI ENTER    &morph_space            &morph_bspc  &mo 2   &kp RGUI
             >;
         };
 
