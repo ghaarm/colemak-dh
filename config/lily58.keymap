@@ -28,6 +28,17 @@
 &mt { tapping-term-ms = <200>; };
 
 / {
+  behaviors {
+    tp: tap_preferred {
+      compatible = "zmk,behavior-hold-tap";
+      label = "TAP_PREFERRED";
+      #binding-cells = <2>;
+      tapping-term-ms = <150>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    }; 
+  // };
     // macros {
     //   alt_backspace: alt_backspace {
     //     compatible = "zmk,behavior-macro";
@@ -41,7 +52,7 @@
     // };
 
 
-    behaviors {
+    // behaviors {
         morph_ae: morph_ae {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -143,7 +154,7 @@
 &mt LG(LC(LA(LEFT_SHIFT))) TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                             &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp CAPS          &kp LC(LA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
-                                          &key_repeat   &kp LALT  &lt 1 DEL   &mt LGUI ENTER    &kp SPC            &morph_bspc  &mo 2   &kp RGUI
+                                          &key_repeat   &kp LALT  &lt 1 DEL   &mt LGUI ENTER    &kp SPC            &morph_bspc  &tp key_repeat MO(2)   &kp RGUI
             >;
         };
 
