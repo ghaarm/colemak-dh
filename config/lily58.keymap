@@ -116,6 +116,7 @@
         compatible = "zmk,combos";
 
         COMBO(lgui-enter, &kp LG(RET), 24 53 54)
+        COMBO(ctrl-enter-repeat, &key_repeat, 36 53)
 
 
         // COMBO(ae, &kp SQT, 25 51)
