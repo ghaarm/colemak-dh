@@ -29,127 +29,77 @@
 
 / {
 
-  macros {
-    repeat_macro: repeat_macro {
-      compatible = "zmk,behavior-macro";
-      label = "REPEAT_MACRO";
-      #binding-cells = <0>;
-      bindings = <&key_repeat>;
-    };
-    mo_macro: mo_macro {
-      compatible = "zmk,behavior-macro";
-      label = "MO_MACRO";
-      #binding-cells = <0>;
-      bindings = <&mo 1>;
-    };
-  };
-
-  behaviors {
-    tp_repeat_mo: tp_repeat_mo {
-    compatible = "zmk,behavior-hold-tap";
-    label = "TP_REPEAT_MO";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    bindings = <&mo>, <&key_repeat>;
-    };
-// macros {
-    //   alt_backspace: alt_backspace {
-    //     compatible = "zmk,behavior-macro";
-    //     #binding-cells = <0>;
-    //     // bindings = <&macro_tap &kp LALT &kp BSPC>;
-    //     bindings = <&macro_press &kp LALT>
-    //     , <&macro_tap &kp BSPC>
-    //     , <&macro_release &kp LALT>
-    //     ;
-    //   };
-    // };
-
-
-    // behaviors {
-        morph_ae: morph_ae {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp SQT>;
-
-            mods = <(MOD_LALT)>;
-        };
-
-        morph_oe: morph_oe {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&kp SEMICOLON>;
-
-            mods = <(MOD_LALT)>;
-        };
-
-        morph_ue: morph_ue {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp U>, <&kp LEFT_BRACKET>;
-
-            mods = <(MOD_LALT)>;
-        };
-
-        morph_ss: morph_ss {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&kp MINUS>;
-
-            mods = <(MOD_LALT)>;
-        };
-
-        morph_bspc: morph_bspc {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-
-            mods = <(MOD_LSFT)>;
-        };
-
-        // morph_space: morph_space {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp SPACE>, <&kp RGUI>;
-        //
-        //     mods = <(MOD_RSFT)>;
-        // };
-
-        // morph_bspc: morph_bspc {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&alt_backspace>, <&kp BSPC>, <&kp DEL>;
-        //
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
-        // morph_bspc: morph_bspc {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&alt_backspace>, <&kp BSPC>;
-        //
-        //     mods = <(MOD_LSFT)>;
-        // };
-        // morph_ABC: morph_ABC {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp A>, <&morph_BC>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
-    };
-
     combos {
         compatible = "zmk,combos";
 
         COMBO(lgui-enter, &kp LG(RET), 24 53 54)
         COMBO(ctrl-enter-repeat, &key_repeat, 36 53)
 
-
         // COMBO(ae, &kp SQT, 25 51)
-        // COMBO(oe, &kp SEMICOLON, 34 51)
-        // COMBO(ue, &kp LEFT_BRACKET, 20 51)
-        // COMBO(ss, &kp MINUS, 27 51)
         // COMBO(ae-ss, &kp SQT &kp MINUS, 25 27 51) // combo wrong technique maybe custom behaviour
-        // COMBO(ue-ss, &kp LEFT_BRACKET &kp MINUS, 20 27 51)
     };
+
+  // macros {
+  //   repeat_macro: repeat_macro {
+  //     compatible = "zmk,behavior-macro";
+  //     label = "REPEAT_MACRO";
+  //     #binding-cells = <0>;
+  //     bindings = <&key_repeat>;
+  //   };
+  // };
+
+  behaviors {
+    tp_repeat_mo: tp_repeat_mo {
+      compatible = "zmk,behavior-hold-tap";
+      label = "TP_REPEAT_MO";
+      #binding-cells = <2>;
+      tapping-term-ms = <150>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&key_repeat>;
+    };
+
+    morph_ae: morph_ae {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp A>, <&kp SQT>;
+
+      mods = <(MOD_LALT)>;
+    };
+
+    morph_oe: morph_oe {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp O>, <&kp SEMICOLON>;
+
+      mods = <(MOD_LALT)>;
+    };
+
+    morph_ue: morph_ue {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp U>, <&kp LEFT_BRACKET>;
+
+      mods = <(MOD_LALT)>;
+    };
+
+    morph_ss: morph_ss {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp S>, <&kp MINUS>;
+
+      mods = <(MOD_LALT)>;
+    };
+
+    morph_bspc: morph_bspc {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp BSPC>, <&kp DEL>;
+
+      mods = <(MOD_LSFT)>;
+    };
+  };
+
 
     keymap {
         compatible = "zmk,keymap";
