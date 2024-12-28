@@ -35,7 +35,7 @@
     label = "TP_REPEAT_MO";
     #binding-cells = <2>;
     tapping-term-ms = <200>;
-    bindings = <&key_repeat>, <&mo 1>;
+    bindings = <&key_repeat>, <&mo>;
     };
 // macros {
     //   alt_backspace: alt_backspace {
