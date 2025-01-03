@@ -114,7 +114,7 @@
 
             bindings = <
 &kp ESCAPE             &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                            &kp N6       &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
-&mt LG(LC(LA(LEFT_SHIFT))) TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                                             &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
+&mt LG(LC(LA(LEFT_SHIFT))) TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                            &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp CAPS          &kp LC(LA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &kp SLASH          &kp GRAVE
                                           &key_repeat   &mt LALT DEL &tp_repeat_mo 1 0  &mt LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp RALT   &kp RGUI
