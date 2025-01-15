@@ -111,8 +111,9 @@
     mt_slow {
             compatible = "zmk,behavior-mod-morph";
             label = "MT_SLOW";
-            tapping-term-ms = <180>; // Custom Tapping-Term für bestimmte Tasten
-        };
+            tapping-term-ms = <180>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";        };
 
   };
 
