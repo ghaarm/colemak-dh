@@ -58,7 +58,7 @@
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
-      bindings = <&kp LALT>, <&key_repeat>;
+      bindings = <&kp>, <&key_repeat>;
     };
 
     morph_ae: morph_ae {
@@ -138,7 +138,7 @@
 &tp LG(LC(RA(LEFT_SHIFT))) TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                            &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LG(LC(LA(LEFT_SHIFT)))          &kp LC(RA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &tp LC(LA(LEFT_SHIFT)) SLASH          &kp GRAVE
-                                          &key_repeat   &tp_repeat_mo   &lt 1 DEL  &tp LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp LALT   &kp RGUI
+                                          &key_repeat   &tp_repeat_mo LALT 0  &lt 1 DEL  &tp LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp LALT   &kp RGUI
             >;
         };
 
