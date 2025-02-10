@@ -54,7 +54,7 @@
     tp_repeat_mo: tp_repeat_mo {
       compatible = "zmk,behavior-hold-tap";
       label = "TP_REPEAT_MO";
-      #binding-cells = <2>;
+      #binding-cells = <1>; // for repeat mit layer 2 schreiben
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
