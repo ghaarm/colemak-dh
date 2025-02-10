@@ -58,7 +58,7 @@
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
-      bindings = <&mo>, <&key_repeat>;
+      bindings = <&kp LALT>, <&key_repeat>;
     };
 
     morph_ae: morph_ae {
@@ -131,12 +131,14 @@
             // | CTRL  |  Z  |  X  |  C   |  D   |  V   | "hyper"|  | "meh" |  K   |  H    |  ,    |  .   |   -   |  |
             //                     | ALT  | REP  | LOWER|  ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
+
+                                          // &key_repeat   &mt LALT DEL &tp_repeat_mo 1 0  &tp LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp LALT   &kp RGUI
             bindings = <
 &kp ESCAPE             &kp N1     &kp N2  &kp N3     &kp N4    &kp N5                                            &kp N6       &kp N7  &kp N8     &kp N9   &kp N0             &kp MINUS
 &tp LG(LC(RA(LEFT_SHIFT))) TAB                &kp Q      &kp W   &kp F      &kp P     &kp B                            &kp J        &kp L   &morph_ue  &kp Z    &kp RIGHT_BRACKET  &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE  &morph_ae  &kp R   &morph_ss  &kp T     &kp G                                             &kp M        &kp N   &kp E      &kp I    &morph_oe          &kp RIGHT_SHIFT
 &kp LEFT_CONTROL       &kp Y      &kp X   &kp C      &kp D     &kp V   &kp LG(LC(LA(LEFT_SHIFT)))          &kp LC(RA(LEFT_SHIFT))  &kp K        &kp H   &kp COMMA  &kp DOT  &tp LC(LA(LEFT_SHIFT)) SLASH          &kp GRAVE
-                                          &key_repeat   &mt LALT DEL &tp_repeat_mo 1 0  &tp LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp LALT   &kp RGUI
+                                          &key_repeat   &tp_repeat_mo 1 0   &lt 1 DEL  &tp LGUI ENTER    &kp SPC            &lt 2 BSPC  &kp LALT   &kp RGUI
             >;
         };
 
@@ -151,8 +153,8 @@
             bindings = <
 &kp NON_US_BSLH  &kp EXCLAMATION   &kp AT_SIGN       &kp LS(NUMBER_3)  &kp DOLLAR        &kp PERCENT                    &kp AMPERSAND   &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp QUESTION
 &kp NON_US_BSLH  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp DOLLAR        &kp PERCENT                    &kp LS(N6)      &kp LS(N7)      &kp LS(N8)            &kp LS(N9)             &kp LS(N0)  &kp LS(MINUS)
-&trans        &kp N1        &kp NUMBER_2  &kp N3        &kp N4            &kp N5                                        &kp GRAVE   &kp LS(LA(N7))  &kp LA(N8)            &kp LA(N9)     &kp RA(N0)       &kp EQUAL
-&none         &kp NUMBER_6  &kp N7        &kp N8        &kp KP_NUMBER_9   &kp N0     &trans                     &trans  &kp LS(GRAVE)           &kp LA(N7)      &kp LS(LG(N8))        &kp LS(LG(N9))         &none       &kp PIPE
+&trans        &kp N1        &kp NUMBER_2  &kp N3        &kp N4            &kp N5                                        &kp GRAVE       &kp LS(LA(N7))  &kp LA(N8)            &kp LA(N9)             &kp RA(N0)  &kp EQUAL
+&none         &kp NUMBER_6  &kp N7        &kp N8        &kp KP_NUMBER_9   &kp N0     &trans                     &trans  &kp LS(GRAVE)   &kp LA(N7)      &kp LS(LG(N8))        &kp LS(LG(N9))         &none       &kp PIPE
                                                      &trans            &trans            &trans       &trans    &trans  &trans          &trans          &trans
 
             >;
