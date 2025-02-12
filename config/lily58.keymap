@@ -71,7 +71,7 @@
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
-      bindings = <&kp 0>, <&key_repeat>;
+      bindings = <&kp>, <&key_repeat>;
     };
     morph_ae: morph_ae {
       compatible = "zmk,behavior-mod-morph";
