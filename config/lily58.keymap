@@ -129,7 +129,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
           }; 
-          ts: tap_preferred {
+          ts: tap_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_SLOW";
             #binding-cells = <2>;
