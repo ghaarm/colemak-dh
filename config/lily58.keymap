@@ -140,17 +140,17 @@
           }; 
           // &lt 2 BSPC
           // &tap_hold_backspace
-          tap_hold_backspace: behavior_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
-
-            bindings = <&kp BSPC>, <&hold_layer 2>;
-            tapping-term-ms = <300>; // Zeit für doppeltes Tippen
-            dance-press-bindings = <&kp BSPC>;  // Normales Tippen = Backspace
-            dance-hold-bindings = <&hold_layer 2>;  // Halten nach einem Tap = Layer 2 aktivieren
-            dance-double-tap-bindings = <&kp BSPC>;  // Doppel-Tap = Backspace erneut senden
-            dance-double-hold-bindings = <&kp BSPC>;  // Doppel-Tap + Halten = Backspace wiederholen
-        };
+        //   tap_hold_backspace: behavior_tap_dance {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <2>;
+        //
+        //     bindings = <&kp BSPC>, <&hold_layer 2>;
+        //     tapping-term-ms = <300>; // Zeit für doppeltes Tippen
+        //     dance-press-bindings = <&kp BSPC>;  // Normales Tippen = Backspace
+        //     dance-hold-bindings = <&hold_layer 2>;  // Halten nach einem Tap = Layer 2 aktivieren
+        //     dance-double-tap-bindings = <&kp BSPC>;  // Doppel-Tap = Backspace erneut senden
+        //     dance-double-hold-bindings = <&kp BSPC>;  // Doppel-Tap + Halten = Backspace wiederholen
+        // };
   };
 
 
@@ -173,7 +173,7 @@
 &tp LG(LC(RA(LEFT_SHIFT))) TAB    &kp Q      &kp W          &kp F                &kp P                &kp B                                                                   &kp J        &kp L      &morph_ue  &kp Z    &kp RIGHT_BRACKET                 &kp NON_US_HASH
 &mt LEFT_SHIFT ESCAPE             &morph_ae  &kp R          &morph_ss            &kp T                &kp G                                                                   &kp M        &kp N      &kp E      &kp I    &morph_oe                         &kp RIGHT_SHIFT
 &kp LEFT_CONTROL                  &kp Y      &kp X          &kp C                &kp D                &kp V       &kp LG(LC(LA(LEFT_SHIFT)))          &kp LC(RA(LEFT_SHIFT))  &kp K        &kp H      &kp COMMA  &kp DOT  &ts LC(LA(LEFT_SHIFT)) SLASH      &kp LEFT_CONTROL
-                                                            &key_repeat          &tp_rep LALT 0       &lt 1 DEL   &tp LGUI ENTER                      &tp LGUI SPC            &tap_hold_backspace   &kp LALT   &kp RGUI
+                                                            &key_repeat          &tp_rep LALT 0       &lt 1 DEL   &tp LGUI ENTER                      &tp LGUI SPC            &lt 2 BSPC   &kp LALT   &kp RGUI
             >;
         };
 
